@@ -33,7 +33,8 @@ echo "Server is up"
 # Start analyzing
 echo "Launching analysis"
 cd ./"$PROJECT_NAME"
-../sonar-scanner-2.5/bin/sonar-runner > /dev/null
+
+../sonar-scanner-2.5/bin/sonar-runner #> /dev/null
 echo "Analysis is done. Go to http://localhost:9000"
 #echo "Shuting down the server"
 #PID=`ps | grep /usr/bin/java | grep sonar | cut -d" " -f1`
